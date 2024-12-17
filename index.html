@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorbike Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">MIGHTY WHEELS</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="#models" class="hover:text-yellow-500">Models</a></li>
+                    <li><a href="#features" class="hover:text-yellow-500">Features</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-[500px]" style="background-image: url('1\ bike\ front.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h2 class="text-4xl font-bold mb-4">Experience the Thrill</h2>
+                <p class="text-lg">Discover the latest models and features of our motorbikes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Models</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="1 bike sport.jpg" alt="Image of Motorbike Model 1" class="rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">SPORT BIKE</h3>
+                    <p class="text-gray-700">Sport bikes are high-performance motorcycles designed for agility and speed, featuring a forward-leaning riding position and aerodynamic styling. They excel on twisting roads and racetracks, delivering sharp handling and powerful acceleration.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="1 bike dirt.jpg" alt="Image of Motorbike Model 2" class="rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">DIRT BIKE</h3>
+                    <p class="text-gray-700">Dirt bikes are lightweight motorcycles designed for off-road riding, featuring rugged tires, high suspension travel, and a compact frame. They excel on rough terrain, including trails, dirt tracks, and obstacles, providing agility and control in challenging conditions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="1 bike crus.jpg" alt="Image of Motorbike Model 3" class="rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">CRUISER BIKE</h3>
+                    <p class="text-gray-700">Cruisers have a low, often wide seat, allowing for a comfortable riding position and easy foot placement.Handlebars are positioned higher and further back, with foot pegs placed forward, creating an upright or slightly leaned-back posture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-tachometer-alt text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">High Performance</h3>
+                    <p class="text-gray-700">Our motorbikes are equipped with high-performance engines that deliver exceptional speed and power.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-shield-alt text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Safety First</h3>
+                    <p class="text-gray-700">Safety is our top priority, with features like ABS and traction control to ensure a secure ride.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-cogs text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Advanced Technology</h3>
+                    <p class="text-gray-700">Experience cutting-edge technology with our smart dashboards and connectivity options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600" onclick="alert('DONE!')">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <div class="footer-social">
+
+                <h4><b>Locaion</b></h4>
+                <a href="https://maps.app.goo.gl/wcZhah3a9p8EKC7M9"><u>Karachi</u></a>
+                <a href="https://maps.app.goo.gl/v1LwQJW8CrKpYrzL9"><u>Islamabad</u></a>
+                <a href="https://maps.app.goo.gl/Zz75Ck42aaCFbvni7"><u>Lahore</u></a>
+                <pre></pre>
+
+                <h4><b>Connect With Us</b></h4>
+                <a href="https://www.facebook.com/login.php/" target="_blank"><u>Facebook</u></a>
+                <a href="https://www.instagram.com/" target="_blank"><u>Instagram</u></a>
+                <a href="https://twitter.com" target="_blank"><u>Twitter</u></a>
+            </div>
+            <pre></pre>
+            <pre></pre>
+            <pre></pre>
+
+            <p> 2023 Mighty Wheels. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
